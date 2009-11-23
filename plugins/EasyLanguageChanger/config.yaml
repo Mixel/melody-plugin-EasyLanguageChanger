@@ -1,0 +1,13 @@
+name: EasyLanguageChanger 
+id: EasyLanguageChanger
+key: EasyLanguageChanger
+author_link: http://mixelandia.com/
+author_name: Mixel Adm
+description: This plugin adds a menu to easyly switch between languages.
+version: 1.0
+plugin_link: http://mixelandia.com/plugins/
+l10n_class: EasyLanguageChanger::L10N
+
+callbacks:
+  MT::App::CMS::template_source.header: $EasyLanguageChanger::EasyLanguageChanger::Plugin::loadLanguages
+  
